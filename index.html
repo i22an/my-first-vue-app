@@ -1,0 +1,28 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title> VUE </title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    
+    <div id="app">
+
+        <h1>
+            {{greet('afternoon')}}
+        </h1>
+        <input v-model="name"><br />
+        hello Im {{ name }} this is my first itime in Vue
+
+        <ul>
+            <li v-for="student in students">{{ student }}</li>
+        </ul>
+
+        <button v-on:click="buttonClick">Click Me</button>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
